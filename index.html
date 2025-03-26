@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="#hostel-booking">Hostel Booking</a></li>
+                <li><a href="#bus-booking">Bus Booking</a></li>
+                <li><a href="#flight-booking">Flight Booking</a></li>
+                <li><a href="#weather-check">Weather Check</a></li>
+                <li><a href="#location-finder">Location Finder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hostel-booking">
+            <h2>Hostel Booking</h2>
+            <button onclick="hostelBooking()">Book Now</button>
+        </section>
+
+        <section id="bus-booking">
+            <h2>Bus Booking</h2>
+            <button onclick="busBooking()">Book Now</button>
+        </section>
+
+        <section id="flight-booking">
+            <h2>Flight Booking</h2>
+            <button onclick="flightBooking()">Book Now</button>
+        </section>
+
+        <section id="weather-check">
+            <h2>Check Weather</h2>
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="checkWeather()">Check</button>
+            <div id="weather-result"></div>
+        </section>
+
+        <section id="location-finder">
+            <h2>Find Your Location</h2>
+            <button onclick="findLocation()">Get Location</button>
+            <div id="location-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
