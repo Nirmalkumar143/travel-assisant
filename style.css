@@ -1,66 +1,114 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    background-color: white;
-    padding: 1rem;
+.form-group {
     margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 button {
-    background-color: #007bff;
+    background: #3498db;
     color: white;
+    padding: 0.8rem 1.5rem;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #2980b9;
 }
 
-footer {
-    text-align: center;
+.menu-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.menu-buttons button {
+    margin: 0;
+}
+
+#weatherResult {
+    margin-top: 1rem;
     padding: 1rem;
-    background-color: #007bff;
-    color: white;
+    background: #f8f9fa;
+    border-radius: 4px;
 }
 
+.error {
+    color: #e74c3c;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.success {
+    color: #27ae60;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+} 
+/* Apply background image to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://i.ibb.co/200Jb33J/wallpaperflare-com-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
